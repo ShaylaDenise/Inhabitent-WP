@@ -9,6 +9,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<img src="<?php bloginfo('template_url'); ?>/images/home-hero.jpg" alt="Girl Sitting at Campsite"></img>
+			<img src="<?php bloginfo('template_url'); ?>/images/logos/inhabitent-logo-full.svg" alt="Inhabitent Logo"></img>
 
 		<?php if ( have_posts() ) : ?>
 
@@ -36,5 +38,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

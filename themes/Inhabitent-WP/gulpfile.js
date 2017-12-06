@@ -49,7 +49,7 @@ gulp.task('browser-sync', function () {
     ];
 
     browserSync.init(files, {
-        proxy: 'localhost[:port-here]/[your-dir-name-here]',
+        proxy: 'localhost:8888/wordpress',
     });
 
     gulp.watch(files).on('change', browserSync.reload);
@@ -60,4 +60,4 @@ gulp.task('watch', function () {
     gulp.watch('./js/*.js', ['scripts']);
 });
 
-gulp.task('default', ['watch', 'browser-sync']);
+gulp.task('default', ['watch', 'browser-sync', 'sass']);

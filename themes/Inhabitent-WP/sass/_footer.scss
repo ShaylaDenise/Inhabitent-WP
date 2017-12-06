@@ -1,0 +1,51 @@
+#colophon {
+  background-image: url("../../images/dark-wood.png");
+  background-size: 512px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .widget-title {
+    color: #d99054;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+  .first.half.left.widget-area {
+    padding-top: 1rem;
+    p {
+      color: white;
+    }
+  }
+  .second.half.widget-area {
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    p {
+      color: white;
+    }
+  }
+  .footer-block:first-child {
+    width: 25%;
+  }
+  .footer-block:nth-child(2) {
+    width: 25%;
+  }
+  .footer-block:nth-child(3) {
+    padding-top: 2.3rem;
+    text-align: right;
+    width: 50%;
+    .site-info {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  #copyright {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+footer.entry-footer {
+  display: none;
+}

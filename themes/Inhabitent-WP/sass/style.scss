@@ -63,3 +63,171 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
+@import "front-page";
+@import "footer";
+
+// Header for Home Page Only
+header#masthead-front {
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .container-front {
+    width: 100vw;
+    height: 3rem;
+  }
+  #primary-menu {
+    flex-grow: 3;
+    font-family: 'merriweatherlight_italic';
+    position: absolute;
+    top: 0;
+    left: 70%;
+    a {
+      color: white;
+      padding: 7px;
+      text-transform: uppercase;
+    }
+  }
+  #white-logo {
+    width: 3rem;
+  }
+  .main-navigation-front {
+
+  }
+}
+
+// Header for all other pages
+header.site-header {
+    background-color: hsla(0, 0%, 100%, .85);
+    border-bottom: 1px solid #e1e1e1;
+    padding: .5rem 0;
+    position: fixed;
+    transition: top .5s linear;
+    width: 100%;
+    z-index: 1;
+    height: 3rem;
+
+    #primary-menu {
+      flex-grow: 3;
+      font-family: 'merriweatherlight_italic';
+      position: absolute;
+      top: 0;
+      left: 70%;
+      a {
+        color: #248a83;
+        padding: 7px;
+        text-transform: uppercase;
+      }
+    }
+
+  #green-logo {
+    width: 3em;
+  }
+
+}
+
+// Styling the home page
+
+
+//Styling the Shop Page
+.entry-header {
+  width: 100%;
+}
+.shop-header {
+  border-bottom: 1px dashed #c8c8c8;
+  font-size: 20px;
+  padding-top: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+.content-area {
+  width: 100%;
+}
+article {
+  margin: 0;
+  width: 25%;
+}
+.content-area-shop {
+  width: 100%;
+  .site-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    .product-grid-item{
+      border: 1px solid #e1e1e1;
+      .thumbnail-wrapper {
+        height: 250px;
+        overflow: hidden;
+      }
+      .attachment-large.size-large.wp-post-image {
+        max-width: 100%;
+        max-height: 185px;
+      }
+    }
+  }
+}
+.product-type-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2rem;
+  text-align: center;
+  a {
+    padding-right: 30px;
+    text-decoration: none;
+    li {
+      color: #248a83;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Styling Adventures
+
+
+.content-head-adventure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .content-title {
+    margin-top: 2rem;
+    padding: 0;
+    max-width: 800px;
+    text-transform: uppercase;
+  }
+  .byline{
+    align-self: left;
+    margin-left: 130px;
+    text-transform: uppercase;
+  }
+}
+.content-text {
+  p {
+    margin-left: 130px;
+    margin-right: 120px;
+  }
+}
+
+// Global hide wordpress headers
+h1.page-title {
+    display: none;
+}
+
+h1.entry-title {
+    display: none;
+}
+
+h2.entry-title {
+  display: none;
+}
+
+
+
+// Global footer

@@ -1,0 +1,302 @@
+/* Front Page Styling */
+
+// Styling the hero image
+.home-hero {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/home-hero.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// Adding font to headers
+.front {
+  font-family: "Novecentosanswide";
+  font-size: 35px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+// Styling Product Info Section
+.product-info-container {
+  h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .product-blocks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-block-wrapper {
+    border: 1px solid #e1e1e1;
+    border-top-width: 5px;
+    padding: .75rem;
+    .product-block-text {
+      font-family: 'merriweatherlight';
+      font-size: 1rem;
+      text-align: center;
+    }
+    img{
+      height: 70px;
+      width: 70px;
+      display: block;
+      margin: auto;
+    }
+    .button {
+      display: block;
+      margin: auto;
+      font-size: 13px;
+      padding-top: 7px;
+      padding-bottom: 7px;
+      width: 8rem;
+      border: none;
+      background-color: #248a83;
+      text-transform: uppercase;
+      border-radius: none;
+      text-align: center;
+      text-shadow: none;
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+// Styling the Journal section
+.journal-posts {
+  min-height: 250px;
+  padding-bottom: 2rem;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      width: 32%;
+      list-style: none;
+      .journal-wrapper {
+        height: 250px;
+        overflow: hidden;
+        position: relative;
+        img {
+          min-height: 260px;
+        }
+      }
+    }
+  }
+}
+.journal-info {
+  border: 1px solid #e1e1e1;
+  height: 167.74px;
+  .journal-link {
+    font-size: 22px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    margin: 0;
+    a {
+      color: #248A83;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+  .read-entry-btn {
+    border: 1px, solid, black;
+    color: black;
+    margin-left: 10px;
+    padding: .8rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .meta-content {
+    .meta {
+      color: black;
+      margin-bottom: 0;
+      padding-left: 8px;
+    }
+  }
+}
+// Styling the adventure section
+.adventure-posts {
+  padding-bottom: 3rem;
+  ul {
+    height: 550px;
+    padding-left: 0;
+    margin-left: 0;
+    li {
+      display: inline-block;
+    }
+  }
+  li:first-child {
+    img {
+      min-width: 820px;
+      height: auto;
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
+      opacity: 0.8;
+    }
+    .adventure-wrapper {
+      background: black;
+      min-width: 542px;
+      min-height: 540px;
+      overflow: hidden;
+      position: relative;
+    }
+    .adventure-info {
+      position: absolute;
+      bottom: 320px;
+      .adventure-link {
+        font-size: 3rem;
+        margin: 1.5rem;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .read-more-btn {
+        border: 2px solid white;
+        font-size: 17px;
+        margin: 1.5rem;
+        padding: .8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  li:nth-child(2) {
+    width: 560px;
+    height: 250px;
+    bottom: 200px;
+    img {
+      max-height: 600px;
+      max-width: 560px;
+      display: inline-block;
+      position: absolute;
+      left: 2px;
+      right: 2px;
+      bottom: 20px;
+    }
+    .adventure-wrapper {
+      bottom: 281px;
+      box-sizing: inherit;
+      left: 22px;
+      max-width: 560px;
+      height: 256px;
+      position: relative;
+      overflow: hidden;
+    }
+    .adventure-info {
+      position: absolute;
+      bottom: 150px;
+      .adventure-link {
+        margin: 1.5rem;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      .read-more-btn {
+        border: 2px solid white;
+        font-size: 17px;
+        margin: 1.5rem;
+        padding: .8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  li:nth-child(3) {
+    width: auto;
+
+    img {
+      max-width: 400px;
+      height: 300px;
+      position: relative;
+      display: inline-block;
+      right: 20px;
+    }
+    .adventure-wrapper {
+      bottom: 150px;
+      max-width: 272px;
+      max-height: 276px;
+      display: inline-block;
+      top: 2px;
+      overflow: hidden;
+      position: relative;
+      left: 569px;
+      top: -284px;
+    }
+    .adventure-info {
+      position: absolute;
+      bottom: 50px;
+      .adventure-link {
+        font-size: 20px;
+        margin: 1.5rem;
+        margin-top: 2rem;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      .read-more-btn {
+        border: 2px solid white;
+        font-size: 17px;
+        margin: 1.5rem;
+        padding: .8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  li:last-child {
+    width: auto;
+
+    img {
+      max-width: 400px;
+      height: 300px;
+      position: relative;
+      display: inline-block;
+      right: 20px;
+    }
+    .adventure-wrapper {
+      bottom: 150px;
+      max-width: 272px;
+      max-height: 276px;
+      display: inline-block;
+      top: 2px;
+      overflow: hidden;
+      position: relative;
+      left: 583px;
+      top: -284px;
+    }
+    .adventure-info {
+      position: absolute;
+      bottom: 80px;
+      margin: 1.5rem;
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+      }
+      .read-more-btn {
+        border: 2px solid white;
+        font-size: 17px;
+        padding: .8rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .more-adventures-btn {
+    background: #248A83;
+    border: 1px solid, #248A83;
+    color: white;
+    font-size: 20px;
+    padding: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
